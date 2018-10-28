@@ -98,13 +98,12 @@ var visible = function visible() {
     $(document).ready(function () {
         $('.sidenav').sidenav({
             onOpenEnd: function(){
-                $('html').css('overflow','hidden');
+                $('#wrapper').css('overflow','hidden');
             },
             onCloseEnd: function(){
-                $('html').css('overflow','');
+                $('#wrapper').css('overflow','');
             }
         });
-        
     });
 };
 
