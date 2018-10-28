@@ -100,6 +100,9 @@ var visible = function visible() {
             onOpenEnd: function(){
                 $('#wrapper').css('overflow','hidden');
                 $('.sidenav-overlay').css('overflow','hidden');
+                $(document).on('touchmove',function(e){
+                    e.preventDefault();
+                  });
             },
             onCloseEnd: function(){
                 $('#wrapper').css('overflow','');
