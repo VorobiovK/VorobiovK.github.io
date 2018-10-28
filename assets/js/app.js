@@ -99,9 +99,11 @@ var visible = function visible() {
         $('.sidenav').sidenav({
             onOpenEnd: function(){
                 $('#wrapper').css('overflow','hidden');
+                $('.sidenav-overlay').css('overflow','hidden');
             },
             onCloseEnd: function(){
                 $('#wrapper').css('overflow','');
+                $('.sidenav-overlay').css('overflow','');
             }
         });
     });
